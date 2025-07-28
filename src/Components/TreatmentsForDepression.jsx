@@ -6,7 +6,7 @@ import right_leaf from '../assets/Depression/right_leaf.png';
 import des_img from '../assets/Depression/treatment_img1.png';
 import helpAndsupport from '../assets/Depression/medicalHelp.png';
 import specialCare from '../assets/Depression/specialCare.png';
-import professionalHelp from '../assets/Depression/professionalHelp.png';
+import professionalHelp from '../assets/Depression/professionalhelp.png';
 import physicalActivity from '../assets/Depression/physicalActivity.png';
 
 
