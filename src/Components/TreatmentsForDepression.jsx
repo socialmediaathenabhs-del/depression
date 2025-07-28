@@ -114,7 +114,7 @@ const TreatmentsForDepression = () => {
           }}
         >
           <div className="px-6 py-6 sm:px-10 sm:py-10">
-            <h1 className="text-white font-extrabold text-[28px] sm:text-[32px] md:text-[36px] leading-tight text-center">
+            <h1 className="text-white font-extrabold text-[26px] sm:text-[32px] md:text-[36px] leading-tight text-center">
               TREATMENTS FOR DEPRESSION
             </h1>
             <p className="text-white text-center mt-3 max-w-[600px] mx-auto text-[14px] sm:text-[15px] md:text-[16px]">

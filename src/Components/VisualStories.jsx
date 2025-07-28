@@ -6,15 +6,15 @@ import vector from '../assets/Depression/vector_faq.png';
 
 const videos = [
   {
-    id: "VIDEO_ID_1",
+    id: "jideGO38OsU?si=bgO8bIWEUoKK3nlU",
     description: "A severe Depressive episode patient shares her story of recovery",
   },
   {
-    id: "VIDEO_ID_2",
+    id: "GM0miuOrZr0?si=OEDflPHwGuMVssOR",
     description: "An OCD & Depression patient shares her story of recovery",
   },
   {
-    id: "VIDEO_ID_3",
+    id: "kzyFqInTf-4?si=hH6NJgG_OAKOWjh0",
     description: "Top 10 Tools Every Product Designer Should Master",
   },
 ];

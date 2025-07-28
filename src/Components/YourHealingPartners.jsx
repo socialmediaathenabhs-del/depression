@@ -41,7 +41,7 @@ const YourHealingPartners = () => {
   return (
     <>
     <section
-      className="max-w-full mx-auto px-6 pt-16 pb-20 text-center relative bg-white z-10   overflow-hidden"
+      className="max-w-full mx-auto px-6 pt-16 sm:pb-20 text-center relative bg-white z-10   overflow-hidden"
     //   style={{
     //     backgroundImage:
     //       "url('https://placehold.co/1200x400?text=Background+Image+Placeholder&font=inter')",
