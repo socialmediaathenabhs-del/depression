@@ -1,16 +1,26 @@
 import React from "react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Logo from '../assets/Depression/footer_Logo.png';
+
 
 const Footer = () => {
   return (
     <footer className="bg-[#14357a] text-white px-16 py-16 sm:px-20 sm:py-20 max-w-8xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8">
-        <div className="max-w-xs text-[13px] leading-relaxed font-normal sm:mt-[150px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 sm:gap-x-14">
+        <div className="flex flex-col gap-10">
+      <img
+      src={Logo}
+      alt="Athena OKAS Logo"
+      className="w-98 object-contain"
+    />
+
+        <div className="max-w-xs text-[13px] leading-relaxed font-normal sm:mt-[10px]">
           Athena OKAS understands that mental health problems need to be treated
           differently in women. We also understand that women need a more open
           setting where they feel safe while discussing their issues. Athena
           OKAS provides such a space and the freedom to women to recover and
           heal at their own pace.
+        </div>
         </div>
 
         <div>

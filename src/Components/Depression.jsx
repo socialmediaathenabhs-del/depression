@@ -31,7 +31,7 @@ const Depression = () => {
       
 
 
-      <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center md:items-center gap-6 md:gap-8 rounded-[48px] p-0 md:p-12 z-10">
+      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8 rounded-[48px] p-0 md:p-12 z-10">
         <img
           src={leftImg}
           alt="Woman looking down worried on couch with plants in background"

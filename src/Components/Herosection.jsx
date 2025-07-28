@@ -23,12 +23,16 @@ const HeroSection = () => {
       {/* Top Buttons */}
       <div className="absolute top-4 right-4 sm:top-6 sm:right-22 flex space-x-2 sm:space-x-3 z-20">
         <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-bold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
+        <a href="https://wa.me/919289730444" target="_blank" rel="noopener noreferrer" className="">
           <i className="fab fa-whatsapp text-[#25D366] text-xs sm:text-2xl"></i>
           <span>Get Cost on Whatsapp</span>
+        </a>
         </button>
         <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-semibold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
+        <a href="tel:+919289730444" className="">
           <i className="fas fa-phone text-xs text-black sm:text-2xl"></i>
           <span>+91 92897 30444</span>
+          </a>
         </button>
       </div>
 
@@ -63,16 +67,17 @@ const HeroSection = () => {
       </div>
 
       {/* Right Text */}
-      <div className="absolute top-[500px] sm:top-[570px] right-20 sm:right-[430px] -translate-y-1/2 max-w-xs sm:max-w-lg text-white text-center px-2 sm:px-0">
+      <div className="absolute top-[500px] sm:top-[570px] right-20 sm:right-[500px] -translate-y-1/2 max-w-xs sm:max-w-lg text-white text-center px-2 sm:px-0">
         
-        <h1 className="relative text-2xl sm:text-4xl md:text-6xl font-light leading-tight max-w-[800px] mx-auto text-left">
+        <h1 className="relative text-2xl sm:text-5xl  font-light leading-tight max-w-[800px] mx-auto text-left">
           Your Mental
           <br />
           Health is a Journey
           <br />
           not a Destination
         </h1>
-        <button className="relative mt-4 sm:mt-6 px-4 sm:px-8 py-1 text-xs sm:text-base font-thin border border-white rounded-full hover:bg-white hover:text-[#3a4f8a] transition">
+        <div className="relative  left-[100px] sm:left-[150px]  block w-px h-10 bg-gradient-to-b from-transparent to-white"></div>
+        <button className="relative  sm:right-12 mt-4 sm:mt-6 px-4 sm:px-8 py-1 text-xs sm:text-base font-thin border border-white rounded-full hover:bg-white hover:text-[#3a4f8a] transition">
           Start your journey
         </button>
       </div>
