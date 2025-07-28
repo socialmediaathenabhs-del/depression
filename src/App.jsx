@@ -12,6 +12,7 @@ import TreatmentsForDepression from './Components/TreatmentsForDepression'
 import VisualStories from './Components/VisualStories'
 import FAQSection from './Components/FAQSection'
 import Footer from './Components/Footer'
+import FloatingButtons from './Components/FloatingButtons'
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
     <HeroSection/>
+    <FloatingButtons/>
     <StatsSection/>
     <WhyChooseAthena/>
     <YourHealingPartners/>

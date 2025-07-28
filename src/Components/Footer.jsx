@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn,FaYoutube } from "react-icons/fa";
 import Logo from '../assets/Depression/footer_Logo.png';
 
 
@@ -85,11 +85,14 @@ const Footer = () => {
         <div className="flex flex-col items-start">
           <p className="text-white text-[26px] font-normal mb-2">Follow Us</p>
           <div className="flex space-x-3">
-            <a href="#" aria-label="Instagram" className="text-white text-xl">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-white text-xl">
               <FaInstagram />
             </a>
-            <a href="#" aria-label="LinkedIn" className="text-white text-xl">
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-white text-xl">
               <FaLinkedinIn />
+            </a>
+            <a href="https://www.youtube.com/@AthenaOKASForFemale"  target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white text-xl">
+               <FaYoutube />
             </a>
           </div>
         </div>
