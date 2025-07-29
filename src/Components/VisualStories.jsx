@@ -27,7 +27,7 @@ const VisualStories = () => {
           Visual Stories of Hope & Healing:
         </h1>
 
-        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-16">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-16">
           {videos.map((video, index) => (
             <div key={index} className="max-w-xs flex flex-col items-start">
               <div className="w-full aspect-video rounded-xl overflow-hidden">

@@ -367,7 +367,7 @@ const TreatmentsForDepression = () => {
 
 
             {/* Mobile View Only  */}
-            <div className=" sm:hidden block mt-6 mb-6 border border-white text-sm text-left">
+            {/* <div className=" sm:hidden block mt-6 mb-6 border border-white text-sm text-left">
         {sections.map(({ key, title, content }) => (
           <div key={key}>
             <div className="border-b border-white w-full">
@@ -387,7 +387,47 @@ const TreatmentsForDepression = () => {
             )}
           </div>
         ))}
+      </div> */}
+
+
+<div className="sm:hidden block mt-6 mb-6 border border-white text-sm text-left rounded-[20px]">
+  {sections.map(({ key, title, content }, index) => {
+    const isLast = index === sections.length - 1;
+    const isOpen = openSection === key;
+
+    return (
+      <div key={key}>
+        {/* Button with conditional bottom border */}
+        <div
+          className={`w-full ${
+            !isLast || isOpen ? 'border-b border-white' : ''
+          }`}
+        >
+          <button
+            type="button"
+            onClick={() => toggleSection(key)}
+            className="w-full p-3 text-left font-semibold text-white hover:underline focus:outline-none"
+            aria-expanded={isOpen}
+          >
+            {title}
+          </button>
+        </div>
+
+        {/* Content without bottom border */}
+        {isOpen && (
+          <div
+            className={`p-3 text-gray-300 ${
+              !isLast ? 'border-b border-white' : ''
+            }`}
+          >
+            {content}
+          </div>
+        )}
       </div>
+    );
+  })}
+</div>
+
 
       {/* <div className="relative p-[2px] rounded-lg "
       style={{

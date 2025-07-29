@@ -29,13 +29,13 @@ const WhyChooseAthena = () => {
         {/* Features Grid */}
         <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-20 mb-12">
           {/* Left Column */}
-          <div className="space-y-10 sm:space-y-12">
+          <div className="space-y-10 sm:space-y-12 ">
             {[
               ['01', 'Empathy Driven\nCare'],
               ['02', 'Respectful,\nNon-Triggering\nEnvironment'],
               ['03', 'Among the Highest\nRecovery Success\nRates in India'],
             ].map(([number, text], index) => (
-              <div key={index} className="flex items-center gap-6 relative">
+              <div key={index} className="  flex items-center gap-6 relative">
                 <span
                   className="text-[30px] sm:text-[120px] font-normal leading-none relative z-10"
                   style={{ fontFamily: '"Source Serif 4", serif' }}

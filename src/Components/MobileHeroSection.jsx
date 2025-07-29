@@ -32,15 +32,15 @@ const MobileHeroSection = () => {
 
 
 
-      <main className="max-w-[590px] w-full bg-white rounded-3xl p-6 md:p-8 flex flex-col gap-6 justify-center items-center rounded-[20px_100px_20px_20px]"
+      <main className="max-w-[590px] w-full rounded-3xl p-6 md:p-8 flex flex-col gap-6 justify-center items-center rounded-[20px_100px_20px_20px]"
         style={{ fontFeatureSettings: "'liga' 0" }}
       >
-        <h1 className="text-black text-2xl leading-tight font-normal">
+        <h1 className="text-white text-[26px] leading-tight font-normal">
         Your Mental Health is a Journey not a Destination
         </h1>
-        <button className=" w-[180px] px-4 sm:px-8 py-2 text-base sm:text-base font-thin border border-black rounded-full hover:bg-white hover:text-[#3a4f8a] transition">
+        {/* <button className=" w-[180px] px-4 sm:px-8 py-2 text-base sm:text-base font-thin border border-black rounded-full hover:bg-white hover:text-[#3a4f8a] transition">
           Start your journey
-        </button>
+        </button> */}
 
         <div
         className=" w-[300px] bg-[#163683B3] rounded-2xl border-[1px] border-white px-4 sm:px-6 py-10 sm:py-10 w-64  flex flex-col space-y-7 sm:space-y-8 text-white"

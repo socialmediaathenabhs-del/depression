@@ -1,10 +1,12 @@
 
-import React from "react";
+
 import bgImg from '../assets/Depression/vector_cause.png';
 import broken_heart from '../assets/Depression/broken-heart.png';
 import mental_disorder from '../assets/Depression/mental-disorder.png';
 import depressed from '../assets/Depression/depressed.png';
 import no_alcohol from '../assets/Depression/no-alcohol.png';
+import React, { useState, useEffect } from "react";
+
 
 
 
@@ -37,14 +39,31 @@ const VerticalSeparator = () => (
 );
 
 const CausesOfDepression = () => {
+    const [isDesktop, setIsDesktop] = useState(false);
+
+
+    useEffect(() => {
+        const checkWidth = () => {
+          setIsDesktop(window.innerWidth >= 640); // sm breakpoint
+        };
+    
+        checkWidth(); // Check on load
+        window.addEventListener("resize", checkWidth);
+    
+        return () => window.removeEventListener("resize", checkWidth);
+      }, []);
+
   return (
 
     <div className="bg-white flex justify-center p-6 max-w-7xl mx-auto sm:h-[700px] sm:mt-20 "
     
       >
-      <div className="relative max-w-7xl w-full bg-white pt-10 pb-14 px-6 sm:px-10 md:px-16 lg:px-20 rounded-tl-[100px] rounded-bl-[100px] overflow-hidden sm:h-[800px] sm:w-[1200px]"
+      <div className="relative max-w-7xl w-full bg-white pt-10 pb-14 px-6 sm:px-10 md:px-16 lg:px-20 rounded-tl-[100px] rounded-bl-[100px] overflow-hidden sm:h-[800px] sm:w-[1200px] sm:bg-[url('../assets/Depression/vector_cause.png')] bg-none"
       style={{
-        backgroundImage: `url(${bgImg})`,
+
+        backgroundImage: isDesktop ? `url(${bgImg})` : "none",
+
+        // backgroundImage: `url(${bgImg})`,
         backgroundSize: '1100px 600px',        
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center top',
