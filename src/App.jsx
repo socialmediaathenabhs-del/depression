@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     <HeroSection/>
-    <MobileHeroSection/>
+    {/* <MobileHeroSection/> */}
     {/* <FloatingButtons/> */}
     <StatsSection/>
     <WhyChooseAthena/>
