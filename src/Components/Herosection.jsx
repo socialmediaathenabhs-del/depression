@@ -29,7 +29,7 @@ const HeroSection = () => {
           <span className=''>Get Cost on Whatsapp</span>
         </a>
         </button>
-        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-semibold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
+        <button className="f-btn flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-semibold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
         <a href="tel:+919289730444" className="">
           <i className="fas fa-phone text-xs text-black sm:text-2xl"></i>
           <span>+91 92897 30444</span>
@@ -62,7 +62,7 @@ const HeroSection = () => {
           rows="6"
           className="bg-[#FFFFFF45] rounded-md px-2 sm:px-4 py-1 sm:py-4 text-[16px] font-thin placeholder-white placeholder-opacity-70 resize-none focus:outline-none border-[0.4px] border-white h-[50px] sm:h-[180px]"
         />
-        <button className="bg-white text-[#01184C] font-semibold text-xs sm:text-[20px] rounded-full py-1 sm:py-2 hover:bg-gray-100 transition">
+        <button className="f-btn bg-white text-[#01184C] font-semibold text-xs sm:text-[20px] rounded-full py-1 sm:py-2 hover:bg-gray-100 transition">
           Start Your Healing Journey
         </button>
       </div>
