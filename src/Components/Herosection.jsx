@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './Button.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import bgImg from '../assets/Depression/homeBG.png';
 
@@ -22,7 +23,7 @@ const HeroSection = () => {
 
       {/* Top Buttons */}
       <div className="absolute top-4 right-4 sm:top-6 sm:right-22 flex space-x-2 sm:space-x-3 z-20">
-        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-bold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
+        <button className=" f-btn flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[9px] sm:text-[14px] font-bold rounded-full border border-[#163683] px-2 sm:px-4 py-0.5 sm:py-2 shadow-md hover:brightness-110 transition">
         <a href="https://wa.me/919289730444" target="_blank" rel="noopener noreferrer" className="">
           <i className="fab fa-whatsapp text-[#25D366] text-xs sm:text-2xl "></i>
           <span className=''>Get Cost on Whatsapp</span>

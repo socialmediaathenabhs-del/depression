@@ -30,7 +30,7 @@ const VisualStories = () => {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-16">
           {videos.map((video, index) => (
             <div key={index} className="max-w-xs flex flex-col items-start">
-              <div className="w-full aspect-video rounded-xl overflow-hidden">
+              <div className="w-full aspect-video rounded-xl overflow-hidden z-0">
                 <iframe
                   className="w-full h-full"
                   src={`https://www.youtube.com/embed/${video.id}`}
@@ -42,12 +42,20 @@ const VisualStories = () => {
               <p className="mt-4 sm:text-[14px] text-black text-left w-full">
                 {video.description}
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="mt-6 px-6 py-2 border border-black rounded-full text-xs text-black hover:bg-gray-100 transition"
               >
                 Learn More
-              </button>
+              </button> */}
+              <a
+                href="https://www.youtube.com/@AthenaOKASForFemale"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 px-6 py-2 border border-black rounded-full text-xs text-black hover:bg-gray-100 transition z-10"
+              >
+                Learn More
+              </a>
             </div>
           ))}
         </div>

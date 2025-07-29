@@ -4,7 +4,7 @@ import bgImg from '../assets/Depression/homeBG.png';
 
 const MobileHeroSection = () => {
   return (
-    <div className=" block sm:hidden bg-[#f4f9ff] min-h-[150vh] flex items-start justify-start px-4 py-36 "
+    <div className=" block sm:hidden bg-[#f4f9ff] min-h-[135vh] flex items-start justify-start px-4 py-36 "
     style={{
         backgroundImage: `url(${bgImg})`,
         backgroundRepeat: 'no-repeat',
@@ -14,15 +14,15 @@ const MobileHeroSection = () => {
     >
 
 <div className="absolute top-4 right-4 sm:top-6 sm:right-22 flex space-x-2 sm:space-x-3 z-20">
-        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[12px] sm:text-[14px] font-bold rounded-full border border-[#163683] px-2 sm:px-4 py-2 sm:py-2 shadow-md hover:brightness-110 transition">
+        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[14px] sm:text-[14px] font-bold rounded-full border border-[#163683] px-2 sm:px-4 py-2 sm:py-2 shadow-md hover:brightness-110 transition">
         <a href="https://wa.me/919289730444" target="_blank" rel="noopener noreferrer" className="">
-          <i className="fab fa-whatsapp text-[#25D366] text-xs sm:text-2xl "></i>
+          <i className="fab fa-whatsapp text-[#25D366] text-base sm:text-2xl "></i>
           <span className=''>Get Cost on Whatsapp</span>
         </a>
         </button>
-        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[12px] sm:text-[14px] font-semibold rounded-full border border-[#163683] px-2 sm:px-4 py-2 sm:py-2 shadow-md hover:brightness-110 transition">
+        <button className="flex items-center space-x-1 sm:space-x-2 bg-white text-[#163683] text-[14px] sm:text-[14px] font-semibold rounded-full border border-[#163683] px-2 sm:px-4 py-2 sm:py-2 shadow-md hover:brightness-110 transition">
         <a href="tel:+919289730444" className="">
-          <i className="fas fa-phone text-xs text-black sm:text-2xl"></i>
+          <i className="fas fa-phone text-base text-black sm:text-2xl"></i>
           <span>+91 92897 30444</span>
           </a>
         </button>

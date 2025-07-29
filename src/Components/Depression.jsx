@@ -35,7 +35,7 @@ const Depression = () => {
         <img
           src={leftImg}
           alt="Woman looking down worried on couch with plants in background"
-          className="rounded-[48px_48px_48px_48px] sm:rounded-[240px_48px_48px_48px]  object-cover sm:w-[40%] sm:h-[500px]"
+          className="rounded-[48px_48px_48px_48px] sm:rounded-[240px_48px_48px_48px]  object-cover sm:w-[40%] h-[250px] sm:h-[500px]"
           width="700"
           height="700"
         />
@@ -77,7 +77,7 @@ const Depression = () => {
       <img
         src={vector_bottom} 
         alt="Gradient divider"
-        className="w-full absolute top-80 -left-20 z-100"
+        className="w-full absolute top-[180px] sm:top-80 -left-20 z-100"
       />
       
     </div>
