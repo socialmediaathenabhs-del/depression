@@ -342,7 +342,7 @@ const TreatmentsForDepression = () => {
 
   return (
     <div className="relative bg-white overflow-hidden">
-      <div className="max-w-[330px] sm:max-w-[1100px] mx-auto mt-12 mb-20 bg-[#15357A] rounded-tl-[20px] rounded-tr-[100px] rounded-br-[20px] rounded-bl-[100px] px-6 py-4 relative overflow-hidden sm:min-h-[570px] sm:max-h-[880px] z-10">
+      <div className="max-w-[330px] sm:max-w-[1100px] mx-auto sm:mt-12 sm:mb-20 bg-[#15357A] rounded-tl-[20px] rounded-tr-[100px] rounded-br-[20px] rounded-bl-[100px] px-6 py-4 relative overflow-hidden sm:min-h-[570px] sm:max-h-[880px] z-10">
         <div
           className="max-w-[1100px] mx-auto flex flex-col h-full"
           style={
