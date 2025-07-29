@@ -111,7 +111,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Text */}
-      <div className="absolute top-[500px] sm:top-[570px] right-20 sm:right-[500px] -translate-y-1/2 max-w-xs sm:max-w-lg text-white text-center px-2 sm:px-0">
+      <div className="absolute top-[500px] sm:top-[590px] right-20 sm:right-[500px] -translate-y-1/2 max-w-xs sm:max-w-lg text-white text-center px-2 sm:px-0">
         
         <h1 className="relative text-2xl sm:text-5xl  font-light leading-tight max-w-[800px] mx-auto text-left">
           Your Mental
