@@ -80,7 +80,7 @@ const CausesOfDepression = () => {
             Factors May Contribute, Including:
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center sm:justify-between items-center gap-6">
+          <div className="mt-10 flex flex-wrap justify-center flex-col sm:flex-row sm:justify-between items-center gap-6">
             {causes.map((item, index) => (
               <React.Fragment key={index}>
                 <div className="flex flex-col items-center max-w-[180px]">
