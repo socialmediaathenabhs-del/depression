@@ -64,64 +64,62 @@ const FAQSection = () => {
 
   return (
     <div className="bg-white pb-14 sm:pb-20 px-6 max-w-7xl mx-auto">
-      <h1 className="text-center text-[32px] font-extrabold text-[#183B82] mb-10">
-        Curious? Start Here.
-      </h1>
+    <h1 className="text-center text-[32px] font-extrabold text-[#183B82] mb-10">
+      Curious? Start Here.
+    </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 max-w-5xl mx-auto">
-        {faqs.map((faq, index) => {
-          const isActive = index === activeIndex;
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 max-w-5xl mx-auto">
+      {faqs.map((faq, index) => {
+        const isActive = index === activeIndex;
 
-          return (
-            <div
-              key={index}
-              className="border border-gray-300 rounded-xl bg-white overflow-hidden transition-all duration-300"
-              style={{
-                height: isActive ? "180px" : "72px",
+        return (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-xl bg-white overflow-hidden transition-all duration-300"
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  toggleFAQ(index);
+                }
               }}
+              aria-expanded={isActive}
+              aria-controls={`faq${index}`}
+              id={`faq${index}-btn`}
+              className={`w-full text-left flex justify-between items-center py-4 px-6 text-base font-normal cursor-pointer transition-colors duration-300 ${
+                isActive ? "bg-[#183b82] text-white" : "text-black"
+              }`}
             >
-              <button
-                onClick={() => toggleFAQ(index)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    toggleFAQ(index);
-                  }
-                }}
-                aria-expanded={isActive}
-                aria-controls={`faq${index}`}
-                id={`faq${index}-btn`}
-                className={`w-full text-left flex justify-between items-center py-4 px-6 text-base font-normal cursor-pointer h-[72px] transition-colors duration-300 ${
-                  isActive ? "bg-[#183b82] text-white" : "text-black"
+              <span className="w-full pr-4">{faq.question}</span>
+              <span
+                className={`w-11 h-10 rounded-full bg-white ${
+                  isActive ? "text-[#183b82]" : "bg-[#183b82] text-[#183b82]"
+                } flex items-center justify-center transition-transform duration-300 ${
+                  isActive ? "rotate-180" : ""
                 }`}
               >
-                <span className="w-full pr-4">{faq.question}</span>
-                <span
-                  className={`w-11 h-10 rounded-full bg-white ${
-                    isActive ? "text-[#183b82]" : "bg-[#183b82] text-[#183b82]"
-                  } flex items-center justify-center transition-transform duration-300 ${
-                    isActive ? "rotate-180" : ""
-                  }`}
-                >
-                  <FaChevronDown />
-                </span>
-              </button>
+                <FaChevronDown />
+              </span>
+            </button>
 
-              <div
-                id={`faq${index}`}
-                role="region"
-                aria-labelledby={`faq${index}-btn`}
-                className={`transition-opacity duration-300 px-6 text-[15px] text-gray-700 border-t border-gray-300 ${
-                  isActive ? "opacity-100 pt-4" : "opacity-0"
-                }`}
-              >
-                {faq.answer}
-              </div>
+            {/* Toggle answer visibility */}
+            <div
+              id={`faq${index}`}
+              role="region"
+              aria-labelledby={`faq${index}-btn`}
+              className={`px-6 text-[15px] text-gray-700 border-t border-gray-300 transition-all duration-300 ${
+                isActive ? "max-h-screen opacity-100 py-4" : "max-h-0 opacity-0 py-0"
+              } overflow-hidden`}
+            >
+              {faq.answer}
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
+  </div>
   );
 };
 
