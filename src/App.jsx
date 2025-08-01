@@ -13,6 +13,7 @@ import VisualStories from './Components/VisualStories'
 import FAQSection from './Components/FAQSection'
 import Footer from './Components/Footer'
 import MobileHeroSection from './Components/MobileHeroSection'
+import OurFacility from './Components/OurFacility'
 // import FloatingButtons from './Components/FloatingButtons'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <TreatmentsForDepression/>
     <VisualStories/>
     <FAQSection/>
+    <OurFacility/>
     <Footer/>
 
     </>

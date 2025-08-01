@@ -64,7 +64,7 @@ const VisualStories = () => {
       <img
         src={vector} 
         alt="Gradient divider"
-        className="w-full "
+        className="w-full h-[200px] sm:h-auto "
       />
     </div>
   );

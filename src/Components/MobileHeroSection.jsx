@@ -53,6 +53,7 @@ const MobileHeroSection = () => {
           <br />
           Confidential Consultation
         </h2>
+        <form>
         <input
           type="text"
           placeholder="Your Name"
@@ -71,6 +72,7 @@ const MobileHeroSection = () => {
         <button className="f-btn bg-white text-[#01184C] font-semibold text-[16px] sm:text-[20px] rounded-full py-2 sm:py-2 hover:bg-gray-100 transition">
           Start Your Healing Journey
         </button>
+        </form>
       </div>
       </main>
     </div>
