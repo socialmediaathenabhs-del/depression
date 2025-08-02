@@ -70,7 +70,7 @@ const FAQSection = () => {
         Curious? Start Here.
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 max-w-5xl mx-auto sm:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 max-w-5xl mx-auto sm:mb-20 ">
         {faqs.map((faq, index) => {
           const isActive = index === activeIndex;
 
@@ -124,7 +124,7 @@ const FAQSection = () => {
 <img
         src={vector}
         alt="Gradient divider"
-        className=" hidden sm:block w-full h-auto absolute top-130 left-10"
+        className=" hidden sm:block w-full h-auto absolute bottom-[-180px] left-10 z-0"
       />
       </div>
 

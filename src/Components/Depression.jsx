@@ -17,7 +17,7 @@ const Depression = () => {
         <img
         src={vector} 
         alt="Gradient divider"
-        className="w-full"
+        className="hidden sm:block w-full relative top-10"
       />
     </div>
     
@@ -62,7 +62,7 @@ const Depression = () => {
       <img
         src={left_leaf}
         alt="Decorative top left"
-        className="absolute -top-60 left-10 sm:h-[700px] sm:w-[300px]  pointer-events-none select-none z-1"
+        className="hidden sm:block absolute -top-60 left-10 sm:h-[700px] sm:w-[300px]  pointer-events-none select-none z-1"
       />
       <img
         src={right_leaf}
